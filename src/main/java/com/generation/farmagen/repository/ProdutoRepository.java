@@ -11,5 +11,5 @@ import com.generation.farmagen.model.ProdutoModel;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
-	public List <ProdutoModel> buscarProdutosEntre(@Param("inicio") BigDecimal inicio, @Param("fim") BigDecimal fim);
+	public List <ProdutoModel> findByPrecoBetween(@Param("inicio") BigDecimal inicio, @Param("fim") BigDecimal fim);
 }

@@ -10,6 +10,6 @@ import com.generation.farmagen.model.CategoriaModel;
 @Repository
 public interface CategoriaRepository extends JpaRepository<CategoriaModel, Long> {
 
-	public List <CategoriaModel> findAllByCategoriaContainingIgnoreCase(String categoria);
+	//public List <CategoriaModel> findAllByCategoriaContainingIgnoreCase(String categoria);
 
 }
